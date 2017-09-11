@@ -1,0 +1,19 @@
+{
+  "name": "fis3-postpackager-djpost-package",
+  "version": "1.0.0",
+  "description": "自动将css中引用的@import、图片、字体地址转换为相对路径;生成map.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winnieBear/fis3-postpackager-djpost-package.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/winnieBear/fis3-postpackager-djpost-package/issues"
+  },
+  "homepage": "https://github.com/winnieBear/fis3-postpackager-djpost-package#readme"
+}
