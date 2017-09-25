@@ -43,6 +43,12 @@ function parseContent(content, dir) {
     var reg = regs[i];
     content = content.replace(reg.patten, function (m, $1) {
       //console.log(m, $1);
+      // if (/(?:https?:)?\/\//.test($1)) {
+      if ($1.indexOf('//') === 0) {
+        // 如果图片地址是线上地址，不做处理
+        console.info('%s not need handle!!!', $1);
+        return m;
+      }
       var relativePath = getRelativePath(dir, parsePath($1));
       // 可能有括号也可能没括号
       return reg.handle(m, relativePath);
